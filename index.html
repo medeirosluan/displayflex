@@ -49,9 +49,6 @@
 
         .menu {
             display: block;
-
-            
-            
         }
 
         .titulo__princi, .titulo__parag {
@@ -60,6 +57,14 @@
 
         .navegacao {
             display: none;
+        }
+
+        .titulo:hover > .navegacao {
+            display: inline-block;
+            background-color: white;
+            height: 200px;
+            position: absolute;
+            
         }
 
         .principal__secao1 img {
@@ -77,12 +82,6 @@
             width: 100%;
         }
 
-        .icone {
-            position: fixed;
-            top: 796px;
-            right: 5px;
-            width: 38px;
-        }
 
         @media screen and (min-width:600px) {
             .titulo__princi, .titulo__parag {
@@ -114,7 +113,7 @@
 </head>
 <body>
         <header class="titulo">
-            <img src="./imagens/Menu Aberto.png" alt="" class="menu">
+            <a href="#"><img src="./imagens/Menu Aberto.png" alt="" class="menu"></a>
             <h1 class="titulo__princi">Curiosidades de Tecnologia</h1>
             <p class="titulo__parag">Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
             <nav class="navegacao">
@@ -167,7 +166,6 @@
                 <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
             </section>
         </main>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="./imagens/whatsapp.png" alt="" class="icone"></a>
                 
         <footer>
             <span>
