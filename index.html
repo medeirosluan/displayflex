@@ -11,128 +11,30 @@
             padding: 0;
             box-sizing: border-box;
         }
-
-        body {
-            background-color: rgb(177, 173, 169);
-            position: relative;
-            
-            
-        }
-
-        .principal {
-            margin: 10px;
-            text-align: center;
-            text-align: justify;
-            background-color: white;
-            padding: 13px;
-           
-        }
-
-        .titulo {
-            background-color: darkcyan;
-            padding: 12px;
-            position: relative;
-           
-        }
-
-        .titulo__princi {
-            text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: white;
-        }
-
-        .titulo__parag {
-            text-align: center;
-            color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        .menu {
-            display: block;
-        }
-
-        .titulo__princi, .titulo__parag {
-            display:none;
-        }
-
-        .navegacao {
-            display: none;
-        }
-
-        /* .titulo:hover > .navegacao {
-            display: inline-block;
-            background-color: white;
-            height: 200px;
-            position: absolute;
-            
-        } */
-
-        .principal__secao1 img {
-            width: 100%;
-            
-        }
-
-        .principal__secao2 img {
-            width: 100%;
-        }
-
-        .principal__video iframe {
-            margin: auto;
-            display: block;
-            width: 100%;
-        }
-
-
-        @media screen and (min-width:600px) {
-            .titulo__princi, .titulo__parag {
-            display:block;
-        }
-
-        .navegacao {
-            display:block;
-
-        }
-        .menu {
-            display: none;
-        }
-
-        }
-
-        @media screen and (min-width:820px) {
-            .principal {
-                width: 820px;
-                margin: auto;
-            }
-            
-
-        }
-
-
-     
        
     </style>
 </head>
 <body>
-        <header class="titulo">
-            <a href="#"><img src="./imagens/Menu Aberto.png" alt="" class="menu"></a>
-            <h1 class="titulo__princi">Curiosidades de Tecnologia</h1>
-            <p class="titulo__parag">Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
+        <header>
+            <a href="#"><img src="./imagens/Menu Aberto.png" alt=""></a>
+            <h1>Curiosidades de Tecnologia</h1>
+            <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
             <nav class="navegacao">
                 <a href="">Home</a>
-                <a href=""><a>Notícias</a></a>
+                <a href="">Notícias</a></a>
                 <a href="">Fale Conosco</a>
             </nav>
         </header>
         <main class="principal">
-            <section class="principal__secao1">
+            <section>
                 <h2>História do Mascote do Android</h2>
-                <p class="principal__para1">Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
+                <p>Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
                 <h2>A primeira versão</h2>
-                <p class="principal__para2">A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p> 
+                <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p> 
                 <img src="./imagens/irinagd.jpg" alt="">
                 <p class="principal__para3">Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
             </section>
-            <section class="principal__secao2">
+            <section>
                 <h2>Surge um novo mascote</h2>
                 <p class="principal__para3">A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
                 <img src="./imagens/logogd.png" alt="">
@@ -140,10 +42,11 @@
                 <img src="./imagens/droidgd.png" alt="">
                 <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
             </section>
-            <section class="principal__video">
-                <iframe width="560" height="400" src="https://www.youtube.com/embed/bnk-vPX0d-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </section>   
-             <section class="principal__extra">   
+            <div class="video">
+               
+                    <iframe width="560" height="400" src="https://www.youtube.com/embed/bnk-vPX0d-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+             <section>   
                <h3>Quer aprender mais? </h3>
                <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
                            
